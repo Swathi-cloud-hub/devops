@@ -1,1 +1,19 @@
 it it a tool for automation purpose
+before installation of maven we need to install java 
+yum install java-1.8.0-openjdk-devel
+java --version
+wget maven binary code
+from maven downloads
+u get apache.tar.zip file
+u need to zip it using
+tar -zxuv
+now u get apache file
+cd apache
+cd bin
+there u will find mvn --version
+but now u need see maven at anywhere so go to root
+sudo su
+open bash profile
+vi prompt opens
+PATH=$PATH:$M3-user@
+now u find maven outside bin also
