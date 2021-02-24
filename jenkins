@@ -28,7 +28,24 @@ in linux -----1) ssh -i ohio.pem ec2-user@instance ip addr
 	      6) ps -ef | grep jenkins.war
 	      7) sudo su
 	      8) go to root jenkins service start (jenkins to start service )
-	      9) chmod (if u give this command it will automatic in jenkins start mood )
-
-
-
+	      9) chmod (if u give this command it will automatic in jenkins start mood 
+in jenkins ---1) create job
+	      2) using free style project and pipelines
+	      3) set git repository,maven m3.6, test results like target/surefire-reports/*.xml
+	      4) artifacts target/*.?ar
+	  now using pipelines
+	      1) new item
+	      2) pipeline project
+	      3) ok
+	      4)open scripting page
+              5)pipeline security open
+	      6) sample items in the 1. git 2.sh shell 3.junit 4.archeive artifact
+	      7)copy git repository hhtp add 2. var/lib/jenkins/workspace/pom.xl u will find in freestyle project of atmosphere 3.springboot-sample/springboot-atmosphere/target/surefire-reports/*.xml
+	         4.springboot-sample/springboot-atmosphere/target/*.?ar
+	      8) copy all these and generate pipeline script
+	      9) copy in script shell
+	      10) node(master) stage(checkout,Build,test result,archevie artifact) def project_path = springboot-sample/springboot-atmosphere  copy this after stage checkout then give dir(project_path)
+              11) after giving dir make every single quotqtion into double quotation
+	      12) apply and save
+	      13) build now
+	      14) done
