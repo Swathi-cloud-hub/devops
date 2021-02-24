@@ -17,3 +17,7 @@ open bash profile
 vi prompt opens
 PATH=$PATH:$M3-user@
 now u find maven outside bin also
+apart from maven
+we have
+ant
+gradle
